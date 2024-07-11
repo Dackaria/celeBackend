@@ -1,0 +1,9 @@
+{"level":"error","message":"No se pueden obtener los productos\n productsModel.paginate is not a function"}
+{"level":"error","message":"No se pueden obtener los productos\n productsModel.paginate is not a function"}
+{"level":"error","message":"cartsService is not defined"}
+{"level":"error","message":"No se puede agregar el carrito\n carts validation failed: cartId: Path `cartId` is required."}
+{"level":"error","message":"No se puede registar al usuario\n No se puede agregar el carrito\n E11000 duplicate key error collection: ecommers.carts index: cartId_1 dup key: { cartId: null }"}
+{"level":"error","message":"No se puede agregar el carrito\n carts validation failed: cartId: Path `cartId` is required."}
+{"level":"error","message":"productService.getProductById is not a function"}
+{"level":"error","message":"productService.getProducts is not a function"}
+{"level":"error","message":"productService.getProducts is not a function"}

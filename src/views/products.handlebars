@@ -1,0 +1,16 @@
+<div class="product-container">
+  {{#each products}}
+  <div class="product-card">
+    <img src="{{this.thumbnail}}" alt="{{this.title}}" class="product-image">
+    <div class="product-details">
+      <h2 class="product-title">{{this.title}}</h2>
+      <p class="product-description">{{this.description}}</p>
+      <p class="product-price">Price: ${{this.price}}</p>
+      <p class="product-code">Code: {{this.code}}</p>
+      <p class="product-stock">Stock: {{this.stock}}</p>
+      <p class="product-category">Category: {{this.category}}</p>
+      <button class="add-to-cart-btn" data-id="{{this._id}}">Agregar al carrito</button>
+    </div>
+  </div>
+  {{/each}}
+</div>
