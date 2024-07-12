@@ -1,16 +1,31 @@
-<div class="product-container">
-  {{#each products}}
-  <div class="product-card">
-    <img src="{{this.thumbnail}}" alt="{{this.title}}" class="product-image">
-    <div class="product-details">
-      <h2 class="product-title">{{this.title}}</h2>
-      <p class="product-description">{{this.description}}</p>
-      <p class="product-price">Price: ${{this.price}}</p>
-      <p class="product-code">Code: {{this.code}}</p>
-      <p class="product-stock">Stock: {{this.stock}}</p>
-      <p class="product-category">Category: {{this.category}}</p>
-      <button class="add-to-cart-btn" data-id="{{this._id}}">Agregar al carrito</button>
-    </div>
+<main class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Code</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Status</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Category</th>
+        <th scope="col">Options</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+  <div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <a id="prevLink" class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+          <a id="nextLink" class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  {{/each}}
-</div>
+</main>
+<script src="/js/products.js"></script>
